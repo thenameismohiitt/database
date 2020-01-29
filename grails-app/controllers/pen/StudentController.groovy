@@ -10,7 +10,7 @@ class StudentController {
         student.save()
         redirect(action:'detailsRecord')
     }
-    def detailsRecord
+    def detailsRecord()
     {
         def students= Student.list()
         [students:students]
